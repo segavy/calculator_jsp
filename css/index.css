@@ -1,0 +1,24 @@
+
+.segavy-calculator{
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(187, 127, 255);
+    padding: 30px;
+    border: 3px solid black;
+}
+
+.segavy-calculator .operations-block button{
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+
+.segavy-calculator .inputs-block .input-block label {
+    display: block;
+}
+
+.segavy-calculator .inputs-block .input-block {
+    display: inline-block;
+    padding: 10px;
+}
