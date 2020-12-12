@@ -36,25 +36,10 @@ function onButtonOperationClick(event) {
     onButtonOperate(operation);
 }
 
-function onButtonPlusClick() {
-    onButtonOperate('+');
-}
-
-function onButtonMinusClick() {
-    onButtonOperate('-');
-}
-
-function onButtonMultipleClick() {
-    onButtonOperate('*');
-}
-
-function onButtonDevideClick() {
-    onButtonOperate('/');
-}
-
+//test row
 
 buttonPlus.addEventListener('click', onButtonOperationClick);
-buttonMinus.addEventListener('click', onButtonMinusClick);
-buttonMultiply.addEventListener('click', onButtonMultipleClick);
-buttonDevide.addEventListener('click', onButtonDevideClick);
+buttonMinus.addEventListener('click', onButtonOperationClick);
+buttonMultiply.addEventListener('click', onButtonOperationClick);
+buttonDevide.addEventListener('click', onButtonOperationClick);
 
