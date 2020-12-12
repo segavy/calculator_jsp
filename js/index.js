@@ -30,6 +30,11 @@ function onButtonOperate(operateSymbol) {
     window.alert(rezult);
 }
 
+function onButtonOperationClick(event) {
+    var clickedElement = event.currentTarget;
+    var operation = clickedElement.innerHTML;
+    onButtonOperate(operation);
+}
 
 function onButtonPlusClick() {
     onButtonOperate('+');
@@ -48,7 +53,7 @@ function onButtonDevideClick() {
 }
 
 
-buttonPlus.addEventListener('click', onButtonPlusClick);
+buttonPlus.addEventListener('click', onButtonOperationClick);
 buttonMinus.addEventListener('click', onButtonMinusClick);
 buttonMultiply.addEventListener('click', onButtonMultipleClick);
 buttonDevide.addEventListener('click', onButtonDevideClick);
