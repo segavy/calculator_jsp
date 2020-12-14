@@ -1,13 +1,6 @@
 
-//var buttonPlus = document.getElementById('buttonPlus');
-//var buttonMinus = document.getElementById('buttonMinus');
-//var buttonMultiply = document.getElementById('buttonMultiply');
-//var buttonDevide = document.getElementById('buttonDevide');
-
 var operationButtons = document.getElementsByClassName('operationButton');
-//[buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
  
-debugger;
 function getInput1() {
     var input1 = document.getElementById('number1');
     return Number(input1.value);
@@ -40,8 +33,6 @@ function onButtonOperationClick(event) {
     onButtonOperate(operation);
 }
 
-
 for (var i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener('click', onButtonOperationClick);
     }
-
